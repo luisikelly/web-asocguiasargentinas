@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa Nacional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO SUPERIOR AZUL CON NAVEGACIÓN COMPLETA -->
+  <header class="header-site">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img src="img/logo.png" alt="Programa Nacional Logo">
+        <span>Programa Nacional</span>
+      </a>
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav-main" id="nav-main">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        
+        <!-- DROPDOWN 1: RAMAS -->
+        <li class="has-dropdown">
+          <a href="#">Ramas ▾</a>
+          <ul class="dropdown">
+            <li><a href="ramas/pimpollitos.html">Pimpollitos</a></li>
+            <li><a href="ramas/alitas.html">Alitas</a></li>
+            <li><a href="ramas/caravana.html">Guías en Caravana</a></li>
+            <li><a href="ramas/solar.html">Guías del Sol</a></li>
+            <li><a href="ramas/clan.html">Guías Mayores</a></li>
+            <li><a href="ramas/mariposas.html">Mariposas</a></li>          </ul>
+        </li>
+
+        <!-- DROPDOWN 2: COMITÉS -->
+        <li class="has-dropdown">
+          <a href="#">Comités ▾</a>
+          <ul class="dropdown">
+            <li><a href="comites/espiritualidad.html">Comité de Espiritualidad</a></li>
+            <li><a href="comites/stem.html">Comité de STEM</a></li>
+            <li><a href="comites/lsy.html">Comité de Libre de Ser Yo</a></li>
+          </ul>
+        </li>
+
+          <!-- MATERIAL DE PROGRAMA -->
+       <li><a href="material/recursos.html">Material de Programa</a></li> 
+      </ul>
+    </nav>
+  </header>  
+  <!-- BANNER PORTADA -->
+  <section class="banner-imagen-full">
+    <img src="img/portada-banner.jpg" alt="Portada Programa Nacional">
+  </section>
+
+  <!-- BLOQUE AZUL DE BIENVENIDA -->
+  <section class="hero-blue-section">
+    <div class="hero-blue-content">
+      <h1>Programa Nacional</h1>
+      <p>¡Bienvenidas! Esta página fue creada especialmente para Voluntarias. Aquí encontrarán recursos de Programa para inspirarse, nutrirse de nuevas ideas y potenciar la creatividad al momento de planificar actividades Guías.</p>
+      <p>Deseamos que disfruten este recorrido y que cada propuesta las acompañe a seguir construyendo experiencias significativas junto a las niñas y jóvenes.</p>
+      <p class="slogan"><strong>¡Siempre Listas para Servir!</strong></p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- NOVEDADES -->
+    <section class="titulo-seccion">
+      <span>Novedades</span>
+    </section>       
+    <section class="news-section">
+      <article class="news-card">
+        <img src="img/novedad-1.png" alt="Imagen informativa de novedades">
+        <a href="https://sites.google.com/view/nair2026/inicio" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          ¡ACCEDÉ A TODO EL MATERIAL!
+        </a>
+      </article>
+    </section>
+
+    <!-- RAMAS -->
+    <section class="titulo-seccion">
+      <span>Material de Programa para cada Rama</span>
+    </section>     
+    <section class="branches-section">
+      <div class="branches-grid">
+        <article class="branch-card">
+          <img src="img/img-pimpollitos.png" alt="Ilustración de Rama Pimpollitos">
+          <a href="ramas/pimpollitos.html" class="btn-secondary">Pimpollitos</a>
+        </article>
+
+        <article class="branch-card">
+          <img src="img/img-alitas.png" alt="Ilustración de Rama Alitas">
+          <a href="ramas/alitas.html" class="btn-secondary">Alitas</a>
+        </article>
+
+        <article class="branch-card">
+          <img src="img/img-gcaravana.png" alt="Ilustración de Guías en Caravana">
+          <a href="ramas/caravana.html" class="btn-secondary">Guías en Caravana</a>
+        </article>
+
+        <article class="branch-card">
+          <img src="img/img-gsol.png" alt="Ilustración de Guías del Sol">
+          <a href="ramas/sol.html" class="btn-secondary">Guías del Sol</a>
+        </article>
+
+        <article class="branch-card">
+          <img src="img/img-gmayores.png" alt="Ilustración de Guías Mayores">
+          <a href="ramas/mayores.html" class="btn-secondary">Guías Mayores</a>
+        </article>
+
+        <article class="branch-card">
+          <img src="img/img-gmariposas.png" alt="Ilustración de Rama Mariposas">
+          <a href="ramas/mariposas.html" class="btn-secondary">Mariposas</a>
+        </article>
+      </div>
+    </section>
+   
+    <!-- HERRAMIENTAS Y RECURSOS -->
+    <section class="titulo-seccion">
+      <span>Herramientas y espacios para seguir explorando</span>
+    </section>
+    
+    <section class="herramientas-general-1">
+      <div class="herramientas">
+        <div class="card-herramienta">
+          <span class="titulo-seccion-herramientas">Recursos nacionales e internacionales</span>
+          <img src="img/foto-guias-1.jpg" alt="Recursos de programa">
+          <a href="#" class="btn-secondary">Descargá el material</a>
+        </div>
+        <div class="card-herramienta">
+          <span class="titulo-seccion-herramientas">Conocé más sobre los Comités de Programa</span>
+          <img src="img/foto-guias-2.jpg" alt="Comités de programa">
+          <a href="#" class="btn-secondary">Exploralos aquí</a>
+        </div>
+        <div class="card-herramienta">
+          <span class="titulo-seccion-herramientas">Accedé a la Biblioteca de AGA</span>
+          <img src="img/foto-guias-3.jpg" alt="Biblioteca AGA">
+          <a href="#" class="btn-secondary">Consulta la Biblioteca AGA</a>
+        </div>
+      </div>
+    </section>
+   
+    <section class="herramientas-general-2">
+      <div class="herramientas">
+        <div class="card-herramienta">
+          <span class="titulo-seccion-herramientas">¡Si sos Jefa de Programa en tu Zona, este espacio es para vos!</span>
+          <img src="img/foto-guias-4.png" alt="Portada Jefas de Programa">
+          <a href="https://sites.google.com/view/jefasdeprograma" target="_blank" rel="noopener noreferrer" class="btn-secondary">Soy Jefa de Programa</a>
+        </div>
+        <div class="card-herramienta">
+          <span class="titulo-seccion-herramientas">¡Enterate de todo lo que sucedió en el último Encuentro Nacional de Programa!</span>
+          <img src="img/foto-guias-5.png" alt="Portada ENAPRO">
+          <a href="#" class="btn-secondary">Accedé al material</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANDERAS / FRANJAS DE ENLACES -->
+    <section class="banner-links-container">
+      <div class="banner-strip banner-rosa">
+        <h2>¡No te quedes afuera de las novedades de Programa!</h2>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-banner">Sumate al Grupo de Whatsapp</a>
+      </div>
+
+      <div class="banner-strip banner-amarillo">
+        <div class="banner-grid-2">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-banner">Antigua Wix de Programa</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-banner">Sitio de Capacitación Nacional</a>
+        </div>
+      </div>
+
+      <div class="banner-strip banner-verde">
+        <h2>¿Tenés sugerencias sobre la nueva página web de Programa?</h2>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-banner">¡Contanos!</a>
+      </div>
+    </section>
+
+    <!-- MAPA Y CALENDARIO -->
+    <section class="elementosutiles-general">
+      <div class="location-section">
+        <h2>Mapa Comunidades Guías</h2>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/d/embed?mid=1K4sWVogzxFEKVXzoYB9av20VdZBj0Jel&ehbc=2E312F" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="calendar-section">
+        <h2>Calendario AGA</h2>
+        <div class="calendar-container">
+          <iframe 
+            src="https://calendar.google.com/calendar/embed?src=wixprograma8%40gmail.com&color=%239fe1e7&ctz=America%2FArgentina%2FBuenos_Aires" 
+            style="border: 0" 
+            width="100%" 
+            height="520" 
+            frameborder="0" 
+            scrolling="no">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-site">
+    <p><strong>Programa AGA</strong></p>
+    <p>programa@asocguiasargentinas.org.ar</p>
+    <p>&copy; Asociación Guías Argentinas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

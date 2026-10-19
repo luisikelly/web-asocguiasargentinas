@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&display=swap');
+
+/* ==========================================
+   1. VARIABLES Y REGLAS GENERALES
+   ========================================== */
+:root {
+  --color-azul-header: #0b6fa4;
+  --color-fondo: #f4f6f8;
+  --color-texto: #333333;
+  --color-tarjeta: #ffffff;
+  --fuente-base: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --fuente-titulos: 'Fredoka', cursive, sans-serif;
+  --fuente-cuerpo: 'Asap', sans-serif;
+  --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radio: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--fuente-base);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 400;
+}
+
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1;
+  width: 100%;
+}
+
+/* ==========================================
+   2. ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+   ========================================== */
+.header-site {
+  background-color: var(--color-azul-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+}
+
+.logo-container a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-container img {
+  height: 38px;
+  width: auto;
+}
+
+.nav-main > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-main a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-main a:hover,
+.nav-main a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdowns en escritorio */
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-tarjeta);
+  list-style: none;
+  min-width: 210px;
+  box-shadow: var(--sombra);
+  border-radius: var(--radio);
+  padding: 8px 0;
+  display: none;
+  z-index: 200;
+}
+
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  color: var(--color-texto);
+  padding: 10px 16px;
+  display: block;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.dropdown li a:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-azul-header);
+}
+
+/* Botón Hamburguesa */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 200;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+.nav-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active .hamburger::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* ==========================================
+   3. PORTADA Y BIENVENIDA
+   ========================================== */
+.banner-imagen-full {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.banner-imagen-full img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-blue-section {
+  background-color: var(--color-azul-header);
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.hero-blue-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-blue-content h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.hero-blue-content p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero-blue-content .slogan {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+/* ==========================================
+   4. TITULOS DE SECCIÓN
+   ========================================== */
+.titulo-seccion {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  background-color: var(--color-azul-header);
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.titulo-seccion-herramientas {
+  font-family: var(--fuente-cuerpo);
+  font-weight: 700;
+  color: var(--color-azul-header);
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* ==========================================
+   5. BOTONES Y TARJETAS DE SECCIÓN
+   ========================================== */
+.btn-primary, 
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--color-azul-header);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover, 
+.btn-secondary:hover {
+  background-color: #08557e;
+  transform: translateY(-2px);
+}
+
+.news-card {
+  background-color: var(--color-tarjeta);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.news-card img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* GRILLA DE RAMAS (3 COLUMNAS EN ESCRITORIO) */
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.branch-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+}
+
+.branch-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+/* ==========================================
+   6. HERRAMIENTAS Y RECURSOS
+   ========================================== */
+.herramientas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.card-herramienta {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex: 1 1 280px;
+  max-width: 340px;
+  min-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.card-herramienta img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+/* ==========================================
+   7. BANDERAS / FRANJAS DE ENLACES
+   ========================================== */
+.banner-links-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.banner-strip {
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.banner-strip h2 {
+  color: #ffffff;
+  font-family: var(--fuente-cuerpo);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.btn-banner {
+  display: inline-block;
+  background-color: #0b6fa4;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--fuente-cuerpo);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, background-color 0.2s;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-banner:hover {
+  background-color: #08557e;
+  transform: translateY(-2px);
+}
+
+.banner-grid-2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.banner-rosa { background-color: #f28b9b; }
+.banner-amarillo { background-color: #ffcc00; }
+.banner-verde { background-color: #55b8a6; }
+
+/* ==========================================
+   8. MAPA Y CALENDARIO
+   ========================================== */
+.elementosutiles-general {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.location-section,
+.calendar-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.location-section h2,
+.calendar-section h2 {
+  background-color: var(--color-azul-header);
+  color: #ffffff;
+  text-align: center;
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.map-container,
+.calendar-container {
+  background-color: var(--color-tarjeta);
+  border-radius: 0 0 var(--radio) var(--radio);
+  box-shadow: var(--sombra);
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+}
+
+.map-container iframe,
+.calendar-container iframe {
+  width: 100%;
+  height: 480px;
+  border: 0;
+  display: block;
+}
+
+/* ==========================================
+   9. GALERÍAS Y RECURSOS MODO PADLET / DRIVE
+   ========================================== */
+.gallery-grid.padlet-mode {
+  display: block !important;
+  width: 100% !important;
+}
+
+.padlet-container {
+  width: 100% !important;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: var(--sombra);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.padlet-container iframe {
+  width: 100% !important;
+  height: 650px;
+  border: none;
+  display: block;
+}
+
+/* Fallback para miniatura/ícono sin imagen */
+.card-image-wrapper img.fallback-icon {
+  object-fit: contain !important;
+  padding: 35px;
+  background-color: #f0f4f8;
+}
+
+/* ==========================================
+   10. PIE DE PÁGINA (FOOTER STICKY FULL-WIDTH)
+   ========================================== */
+.footer-site {
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+  margin-top: auto !important;
+  box-sizing: border-box !important;
+  background-color: var(--color-azul-header, #0b6fa4) !important;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ==========================================
+   11. ADAPTACIÓN RESPONSIVE UNIFICADA
+   ========================================== */
+@media (max-width: 900px) {
+  .elementosutiles-general {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe,
+  .calendar-container iframe {
+    height: 380px;
+  }
+}
+
+@media (max-width: 850px) {
+  .branches-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-main {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-azul-header, #0b6fa4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .nav-main.open {
+    max-height: 750px;
+  }
+
+  .nav-main > ul {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .nav-main a {
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .has-dropdown .dropdown {
+    position: static;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin-top: 5px;
+    display: none;
+  }
+
+  .has-dropdown:hover .dropdown,
+  .has-dropdown.active .dropdown {
+    display: block;
+  }
+
+  .dropdown li a {
+    color: #ffffff;
+    padding-left: 25px;
+  }
+
+  .banner-imagen-full {
+    height: 180px;
+  }
+
+  .banner-grid-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .padlet-container iframe {
+    height: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  .branches-grid {
+    grid-template-columns: 1fr;
+  }
+}

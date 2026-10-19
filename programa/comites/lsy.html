@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comité de STEM - AGA</title>
+  <link rel="stylesheet" href="../styles-subpages.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO SUPERIOR AZUL CON NAVEGACIÓN -->
+  <header class="header-site">
+    <div class="logo-container">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="Programa Nacional Logo">
+        <span>Programa Nacional</span>
+      </a>
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav-main" id="nav-main">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        
+        <!-- DROPDOWN 1: RAMAS -->
+        <li class="has-dropdown">
+          <a href="#">Ramas ▾</a>
+          <ul class="dropdown">
+            <li><a href="../ramas/pimpollitos.html">Pimpollitos</a></li>
+            <li><a href="../ramas/alitas.html">Alitas</a></li>
+            <li><a href="../ramas/caravana.html">Guías en Caravana</a></li>
+            <li><a href="../ramas/solar.html">Guías del Sol</a></li>
+            <li><a href="../ramas/clan.html">Guías Mayores</a></li>
+            <li><a href="../ramas/mariposas.html">Mariposas</a></li>
+          </ul>
+        </li>
+
+        <!-- DROPDOWN 2: COMITÉS (ACTIVO) -->
+        <li class="has-dropdown">
+          <a href="#" class="active">Comités ▾</a>
+          <ul class="dropdown">
+            <li><a href="espiritualidad.html">Comité de Espiritualidad</a></li>
+            <li><a href="stem.html">Comité de STEM</a></li>
+            <li><a href="lsy.html">Comité de Libre de Ser Yo</a></li>
+          </ul>
+        </li>
+
+        <!-- MATERIAL DE PROGRAMA -->
+        <li><a href="../material/recursos.html">Material de Programa</a></li> 
+      </ul>
+    </nav>
+  </header>  
+
+  <!-- BANNER PRINCIPAL -->
+  <section class="hero-banner">
+    <img src="../img/comite-lsy.png" alt="Comité de STEM" class="hero-img">
+    <div class="hero-content">
+     <!--<h1>Comité de STEM</h1>--> 
+    </div>
+  </section>
+
+  <!-- CONTENIDO PRINCIPAL -->
+<!-- CONTENIDO PRINCIPAL -->
+  <main>
+  
+    <!-- ========================================== -->
+    <!-- SECCIONES DE CONTENIDO DEDICADAS POR TAB   -->
+    <!-- ========================================== -->
+
+
+<!-- PESTAÑA 2: STEM EN AMGS (DISEÑO HORIZONTAL DE CAMPFIRE) -->
+<section class="seccion-tab-extra" id="sec-amgs" style="display: none;">
+  <div class="campfire-card-container">
+    
+    <!-- Línea divisoria superior -->
+    <hr class="campfire-divider">
+
+    <div class="campfire-card-content">
+      <!-- Columna izquierda: Imagen + Botón -->
+      <div class="campfire-left-col">
+        <div class="campfire-img-wrapper">
+          <img src="../img/campfire-stem.jpg" alt="STEM llega a Campfire">
+        </div>
+        <a href="https://campfire.wagggs.org/" target="_blank" rel="noopener noreferrer" class="btn-campfire">
+          ACCEDÉ AL SITIO
+        </a>
+      </div>
+
+      <!-- Columna derecha: Título + Texto explicativo -->
+      <div class="campfire-right-col">
+        <h2 class="campfire-title">STEM llega a Campfire</h2>
+        <p class="campfire-text">
+          Potenciá tus actividades y talleres con los nuevos recursos de la AMGS para esta área. Este material te brindará las herramientas y dinámicas necesarias para motivar a las niñas y jóvenes a explorar el mundo de la ciencia y la tecnología, rompiendo estereotipos de género y liderando desde la acción. ¡Explorá el sitio y planificá tu próximo desafío!
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- ESTRUCTURA DEL MODAL OVERLAY -->
+  <div class="modal-overlay" id="resource-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-description" class="modal-body-text"></div>
+      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary"></a>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-site">
+    <p><strong>Programa AGA</strong></p>
+    <p>programa@asocguiasargentinas.org.ar</p>
+    <p>&copy; Asociación Guías Argentinas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="../script-subpages-comites.js"></script>
+</body>
+</html>

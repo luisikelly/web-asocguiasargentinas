@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa AGA - AGA</title>
+    <link rel="stylesheet" href="../styles-subpages.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO SUPERIOR AZUL CON NAVEGACIÓN COMPLETA -->
+  <header class="header-site">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="../img/logo.png" alt="Programa Nacional Logo">
+        <span>Programa Nacional</span>
+      </a>
+    </div>
+
+    <!-- BOTÓN HAMBURGUESA (MÓVIL) -->
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav-main" id="nav-main">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        
+        <!-- DROPDOWN 1: RAMAS -->
+        <li class="has-dropdown">
+          <a href="#">Ramas ▾</a>
+          <ul class="dropdown">
+            <li><a href="../ramas/pimpollitos.html">Pimpollitos</a></li>
+            <li><a href="../ramas/alitas.html">Alitas</a></li>
+            <li><a href="../ramas/caravana.html">Guías en Caravana</a></li>
+            <li><a href="../ramas/solar.html">Guías del Sol</a></li>
+            <li><a href="../ramas/clan.html">Guías Mayores</a></li>
+            <li><a href="../ramas/mariposas.html">Mariposas</a></li>
+          </ul>
+        </li>
+
+        <!-- DROPDOWN 2: COMITÉS -->
+        <li class="has-dropdown">
+          <a href="#">Comités ▾</a>
+          <ul class="dropdown">
+            <li><a href="../comites/espiritualidad.html">Comité de Espiritualidad</a></li>
+            <li><a href="../comites/stem.html">Comité de STEM</a></li>
+            <li><a href="../comites/lsy.html">Comité de Libre de Ser Yo</a></li>
+          </ul>
+        </li>
+
+        <!-- DROPDOWN 3: MATERIAL DE PROGRAMA -->
+        <li><a href="#" class="active">Material de Programa</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <!-- BANNER CON TEXTO SUPERPUESTO -->
+  <section class="hero-banner">
+    <img src="../img/azul.png" alt="Portada" class="hero-img">
+    <div class="hero-content">
+      <h1>Recursos y material de Programa</h1>
+    </div>
+  </section>
+  
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- BARRA DE PESTAÑAS (TABS) -->
+    <nav class="tabs-bar">
+      <a href="#aga" class="tab-item active" data-type="drive" data-folder="1fhpGekyGGW-KVUGiL6L3LHxCOjwH28Sq" data-target-grid="grid-aga">
+        AGA
+      </a>
+      <a href="#amgs" class="tab-item" data-type="drive" data-folder="1RH8aL35vojUIkXKDBHwgcwyvLEKR2Qcy" data-target-grid="grid-amgs">
+        AMGS
+      </a>
+      <a href="#audio" class="tab-item" data-type="drive" data-folder="1MNOIAbcx8_6_6F6KxxzLNgtyV8bOU90D" data-target-grid="grid-audio">
+        Recursos de Audio
+      </a>
+      <a href="#otros" class="tab-item" data-type="drive" data-folder="1ylIUi5pCWGOFdjBUO9p-AcFQwHBcUIs3" data-target-grid="grid-otros">
+        Otros recursos
+      </a>
+    </nav>
+
+    <!-- CONTENEDOR DE GALERÍA DE DRIVE / PADLET -->
+    <section class="gallery-section">
+      <div class="gallery-grid" id="drive-gallery">
+        <p class="loading-text">Cargando recursos...</p>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- GRILLAS DE RECURSOS EXTRAS (POR PESTAÑA)    -->
+    <!-- ========================================== -->
+
+    <!-- 1. RECURSOS EXTRAS PARA AGA -->
+    <section class="recursos-grid" id="grid-aga">
+      <!-- TARJETA 1 -->
+      <article class="modal-card" 
+               data-title="Programa de Educación Financiera"
+               data-description="Administrar los recursos también es aprender a decidir, planificar y hacer realidad proyectos. Esta cartilla propone actividades dinámicas y accesibles para que Pimpollitos, Alitas y Guías puedan acercarse a la educación financiera de una manera significativa.<br><br>Encontrarán propuestas para reflexionar sobre el valor del dinero, el ahorro, el presupuesto y las metas.<br><br>✨ ¡Accedé al material y elegí las actividades que mejor acompañen a tu Grupo!"
+               data-link="https://drive.google.com/drive/folders/1gvedR_8nkSoVRenL4W4I1hXKeQ3sSGcg" 
+               data-btn-text="Accedé al paquete de actividades"
+               data-img="../img/educacion-financiera.jpg">
+        <div class="card-img-wrapper">
+          <img src="../img/aflatoun.png" alt="Programa de educación Financiera">
+        </div>
+        <h3>Programa de educación Financiera</h3>
+      </article>
+
+      <!-- TARJETA 2 -->
+      <article class="modal-card" 
+               data-title='Programa "Cortá la brecha"'
+               data-description="La justicia económica también se construye desde las decisiones cotidianas y desde la posibilidad de participar en igualdad de condiciones. Este material propone actividades para abordar la economía con perspectiva de género, promover el diálogo y comprender cómo las decisiones y las instituciones económicas impactan en nuestra vida.<br><br>✨ ¡Accedé al material y descubrí las propuestas pensadas para tu Grupo!"
+               data-link="https://drive.google.com/file/d/1_5pmUX4ieHakas3Po6shk15hnaNu8m_n/view" 
+               data-btn-text="Accedé al paquete de actividades"
+               data-img="../img/corta-la-brecha.jpg">
+        <div class="card-img-wrapper">
+          <img src="../img/brecha.png" alt="Cortá la brecha">
+        </div>
+        <h3>Programa "Cortá la brecha"</h3>
+      </article>
+
+      <!-- TARJETA 3 -->
+      <article class="modal-card" 
+               data-title="Uniforme Guía y sus insignias"
+               data-description="Gracias al aporte de Victoria Re Peñalva, sumamos a nuestro sitio un nuevo recurso sobre el uniforme guía de la AGA y sus insignias. En este material van a encontrar información para conocer mejor cada uno de sus elementos, su significado y la manera correcta de ubicarlos. ¡Agradecemos especialmente a Victoria por compartir sus conocimientos y ayudarnos a seguir enriching este espacio con recursos útiles para toda la Asociación!"
+               data-link="https://drive.google.com/drive/folders/1QSzTexHbgkwt8wHsqkWurYSsAjKYznS-" 
+               data-btn-text="Accedé al material"
+               data-img="../img/uniforme.jpg">
+        <div class="card-img-wrapper">
+          <img src="../img/uniforme.png" alt="Uniforme Guía y sus insignias">
+        </div>
+        <h3>Uniforme Guía y sus insignias</h3>
+      </article>
+    </section>
+
+    <!-- 2. RECURSOS EXTRAS PARA AMGS -->
+    <section class="recursos-grid" id="grid-amgs" style="display: none;">
+      <article class="modal-card" 
+               data-title="Recorré el mundo Guía Scout a través de sus uniformes"
+               data-description="xplorá este increíble recurso creado por Girlguiding Cymru y conocé los uniformes de Guías Scouts de más de 150 países. Una propuesta que celebra la diversidad, la identidad y la hermandad mundial que nos une como Movimiento. ✨🌍 "
+               data-link="https://girlguidingcymru.org.uk/uniform-around-the-world" 
+               data-btn-text="Accedé al sitio"
+               data-img="../img/uniforme-amgs.png">
+        <div class="card-img-wrapper">
+          <img src="../img/uniforme-amgs.png" alt="">
+        </div>
+        <h3>Recorré el mundo Guía Scout a través de sus uniformes</h3>
+      </article>
+            <article class="modal-card" 
+               data-title="Descubrí el nuevo hogar digital del Movimiento Guía Scout"
+               data-description="Campfire es la plataforma global de la AMGS donde encontrarás cursos, programas, oportunidades, materiales educativos, noticias y comunidades temáticas para seguir creciendo junto a otras personas del Movimiento."
+               data-link="https://campfire.wagggs.org/es" 
+               data-btn-text="Accedé al sitio"
+               data-img="../img/campfire.png">
+        <div class="card-img-wrapper">
+          <img src="../img/campfire.png" alt="">
+        </div>
+        <h3>Descubrí el nuevo hogar digital del Movimiento Guía Scout</h3>
+      </article>
+      <!-- ACORDEÓN DESPLEGABLE SOLO PARA ESTA PESTAÑA -->
+  <details class="acordeon-item" open>
+    <summary class="acordeon-header">
+      <span class="acordeon-titulo">Eventos internacionales</span>
+      <span class="acordeon-flecha"></span>
+    </summary>
+    <div class="acordeon-contenido">
+      <ul class="acordeon-lista">
+        <li>
+          <a href="https://sites.google.com/view/programaaga/materialprograma-aga/materialprograma-amgs/rally-arg-mex?authuser=0" target="_blank" rel="noopener noreferrer">
+            Rally Internacional Arg-Mex 2026
+          </a>
+        </li>
+      </ul>
+    </div>
+  </details>
+ </section>
+
+    <!-- 3. RECURSOS EXTRAS PARA RECURSOS DE AUDIO -->
+    <section class="recursos-grid" id="grid-audio" style="display: none;">
+      <!-- Agregá acá las tarjetas que corresponden a Audio -->
+    </section>
+
+    <!-- 4. RECURSOS EXTRAS PARA OTROS RECURSOS -->
+    <section class="recursos-grid" id="grid-otros" style="display: none;">
+            <article class="modal-card" 
+               data-title=""
+               data-description=""
+               data-link="https://sites.google.com/view/programaaga/enapro2026/tarot-gu%C3%ADa?authuser=0" 
+               data-btn-text="Ingresá y descubrí lo que las cartas tienen para vos"
+               data-img="../img/tarot-guia.png">
+        <div class="card-img-wrapper">
+          <img src="../img/tarot-guia.png" alt="">
+        </div>
+        <h3>Tarot Guía</h3>
+      </article>         
+      <article class="modal-card" 
+               data-title="Juego: Dabble Guía"
+               data-description="Encontrá los pares de insignias"
+               data-link="https://view.genially.com/6a6808eb3b81f31910d1d397" 
+               data-btn-text="Accedé al recurso"
+               data-img="../img/insignias-juego.png">
+        <div class="card-img-wrapper">
+          <img src="../img/insignias-juego.png" alt="">
+        </div>
+        <h3>Juego: Dabble Guía</h3>
+      </article>
+      <article class="modal-card" 
+               data-title="Juego: Basta Guía"
+               data-description=""
+               data-link="https://view.genially.com/6a46b18c76c799540bc2929a" 
+               data-btn-text="Accedé al recurso"
+               data-img="../img/basta-juego.png">
+        <div class="card-img-wrapper">
+          <img src="../img/basta-juego.png" alt="">
+        </div>
+        <h3>Juego: Basta Guía</h3>
+      </article>
+            <article class="modal-card" 
+    data-title="Banco de Imágenes para Voluntarias"
+           data-description="A lo largo de este tiempo fuimos creando una gran cantidad de imágenes con inteligencia artificial para acompañar actividades, eventos, comunicaciones y materiales educativos.<br><br>Si bien NO SON ILUSTRACIONES OFICIALES DE AGA, sabemos que muchas veces encontrar una imagen que represente lo que queremos transmitir no es sencillo.<br><br>✨ Esperamos que puedan explorar y aprovechar estos recursos."
+           data-link="https://drive.google.com/drive/folders/1UrDwk_02oJ-j573BWdXcZORM8-bYYdw5" 
+           data-btn-text="Accedé al Banco de Imágenes"               
+           data-img="../img/imagenes-voluntarias.png">
+        <div class="card-img-wrapper">
+          <img src="../img/imagenes-voluntarias.png" alt="">
+        </div>
+        <h3>Banco de Imágenes para Voluntarias</h3>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ESTRUCTURA DEL MODAL OVERLAY -->
+  <div class="modal-overlay" id="resource-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar">&times;</button>
+      <h2 id="modal-title"></h2>
+      <div id="modal-description" class="modal-body-text"></div>
+      <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary"></a>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer-site">
+    <p><strong>Programa AGA</strong></p>
+    <p>programa@asocguiasargentinas.org.ar</p>
+    <p>&copy; Asociación Guías Argentinas. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="../script-subpages-material.js"></script>
+</body>
+</html>
