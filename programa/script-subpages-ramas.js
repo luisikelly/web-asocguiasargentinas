@@ -88,17 +88,24 @@ function cargarPadlet(urlPadlet) {
 }
 
 // 3. MOSTRAR / OCULTAR GRILLAS DE RECURSOS EXTRAS
+// 3. MOSTRAR / OCULTAR GRILLAS DE RECURSOS EXTRAS
 function mostrarGrillaRecursos(targetGridId) {
   const grillas = document.querySelectorAll('.recursos-grid');
-  grillas.forEach(grid => {
-    grid.style.display = 'none';
-  });
 
   if (targetGridId) {
+    // Si la pestaña especifica una grilla puntual
+    grillas.forEach(grid => {
+      grid.style.display = 'none';
+    });
     const grillaActiva = document.getElementById(targetGridId);
     if (grillaActiva) {
       grillaActiva.style.display = 'flex';
     }
+  } else {
+    // Si no hay target-grid (como en Ramas), la grilla permanece SIEMPRE visible
+    grillas.forEach(grid => {
+      grid.style.display = 'flex';
+    });
   }
 }
 
