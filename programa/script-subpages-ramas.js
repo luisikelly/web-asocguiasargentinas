@@ -194,3 +194,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+// LÓGICA PARA EL MENÚ HAMBURGUESA
+  const navToggle = document.getElementById('nav-toggle');
+  const navMain = document.getElementById('nav-main');
+
+  if (navToggle && navMain) {
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMain.classList.toggle('open');
+    });
+  }
